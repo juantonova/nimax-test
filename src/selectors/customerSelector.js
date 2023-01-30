@@ -1,0 +1,1 @@
+export const customerSelector = (store) => store.order.customer

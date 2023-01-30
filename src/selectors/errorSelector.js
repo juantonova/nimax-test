@@ -1,0 +1,1 @@
+export const errorSelector = (store) => store.order.error.error

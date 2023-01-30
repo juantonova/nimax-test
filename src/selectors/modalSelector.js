@@ -1,0 +1,1 @@
+export const modalSelector = store => store.modal;

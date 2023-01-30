@@ -1,0 +1,15 @@
+.container {
+    background-color: $dark-gray;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    @media (max-height: 701px) {
+        align-items: flex-start;
+    }
+    @media (max-width: 640px) {
+        align-items: flex-start;
+        height: 100vh;
+        min-height: 700px;
+    }
+}

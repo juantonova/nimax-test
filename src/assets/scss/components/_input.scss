@@ -1,0 +1,70 @@
+.input__container {
+    width: 318px;
+}
+
+.input__text, .input__number {
+    width: 100%;
+    height: 32px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 7px 8px;
+}
+
+.input__checkbox {
+    height: 16px;
+    width: 16px;
+}
+
+.input__radio {
+    height: 14px;
+    width: 14px;
+    margin: 13px 7px 0 0;
+
+}
+
+.input__checkbox__mobile, .input__radio__mobile {
+    display: none;
+}
+
+.input {
+    &__error {
+        position: relative;
+        input {
+            color:$red;
+            background-color: $red-second;
+            border-color: $red-third;
+        
+        }
+        span {
+            position: absolute;
+            color:$red;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
+            left: 8px;
+            bottom: -12px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .input__container {
+        width: 100%;
+    }
+
+    .input__checkbox, .input__radio {
+        display: none;
+    }
+
+    .input__checkbox__mobile, .input__radio__mobile {
+        display: flex;
+    }
+
+    .input__date {
+        width: 100%
+    }
+}
